@@ -1,3 +1,4 @@
+![Codi Coop](assets/images/logo/logo_codi_coop--blanc.svg)
 ## Cooperativa sense ànim de lucre
 Aquí fem un teaser del contingut de l’apartat de qui som consectetur adipiscing el ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor.
 
