@@ -1,8 +1,4 @@
----
-title: Busquem sòcies!
----
-
-## Cooperativa sense ànim de lucre
+# Cooperativa sense ànim de lucre
 Aquí fem un teaser del contingut de l’apartat de qui som consectetur adipiscing el ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor.
 
 ## Filtre ètic amb els clients
