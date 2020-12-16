@@ -1,0 +1,242 @@
+/*** Components ***/
+
+/* Layouts */
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column--end {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* HTML Structure -        
+<section class="intro">
+  <div class="flex-column--end is-darker">
+    <h1 class="intro__title title-1"></h1>
+    <h2 class="intro__subtitle title-1"></h2>
+    <button class="nav-down"><img src="../../assets/images/icons/icon_arrow--down--blue.svg" alt=""></button>
+  </div>
+</section>
+*/
+.intro {
+  position: relative;
+  /* background-image: Will be defined for each page individually*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  
+  div {
+    height: calc(100vh - 75px);
+  }
+
+  &__title,
+  &__subtitle,
+  &__text {
+    padding-bottom: var(--spacing-xxl-2);
+    padding-left: var(--spacing-xxl);
+    width: 75%;
+    z-index: 0;
+  }
+}
+
+/* States */
+.is-hidden {
+  display: none;
+}
+.is-active {
+  font-weight: bold;
+}
+/* Turns it white - not compatible with shadows */
+.is-white {
+  filter: brightness(500%);
+}
+/* Applies a semi-transparent layer on top that makes it darker */
+/* Might have to give a z-index to the elements we want see on top */
+.is-darker::before {
+  content: "";
+  background-color: var(--black);
+  opacity: 0.5;
+  width: 100%;
+  height: inherit;
+  position: absolute;
+}
+
+/* Social Media Elements */
+.social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  &__icon + &__icon {
+    padding-left: var(--spacing-s);
+  }
+}
+/* Input */
+.input {
+  display: flex;
+  border-bottom: 2px solid var(--blue);
+  + .input {
+    margin-top: var(--spacing-l);
+  }
+
+  // &.input--big {
+  //   border-right: 2px solid var(--blue);
+  // }
+  // &__label {}
+  &__box--big {
+    position: relative;
+  }
+  &__box--big::before {
+    content: "";
+    width: 2px;
+    background-color: var(--blue);
+    position: absolute;
+    height: 139%;
+    bottom: -2px;
+    right: -2px;
+  }
+  &__textfield {
+    width: 100%;
+    text-align: start;
+    }
+  &__textfield--big {
+    height: 57px;
+  }
+  textarea {
+    appearance: none;
+    border: none;
+    resize: vertical;
+    outline: none;  
+    overflow: auto;
+    font: inherit;
+    color: inherit;
+    width: 100%;
+  }
+  &__error {
+    position: absolute;
+    right: 0;
+    top: -14px;
+  }
+}
+
+/* Buttons */
+.btn {
+  padding: 12.3px 0 12.3px var(--spacing-xxl-2);
+
+  // The colors of the buttons
+  &.btn--blue {
+    background-color: var(--blue);
+  }
+  &.btn--lilac {
+    background-color: var(--lilac);
+  }
+  &.btn--red {
+    background-color: var(--red);
+  }
+  &.btn--white {
+    background-color: var(--white);
+  }
+  &.btn--black {
+    background-color: var(--black);
+  }
+  
+  //.btn--left is a flex item (from a column)
+  &.btn--left {
+    position: relative;
+    padding-right: var(--spacing-xxl-4);
+    align-self: flex-end;
+    left: 32px;
+    &::before {
+      position: absolute;
+      width: 29.5px;
+      left: -0.5px;
+      top: -0.8px;
+    }
+
+    // The colors of the backgrounds behind the buttons
+    &:not(.bg--grey)::before {
+      content: url("../../assets/images/box_negative.svg");
+    }
+    &.bg--grey::before {
+      content: url("../../assets/images/box_negative--grey.svg");
+    }
+    &.bg--blue::before {
+      content: url("../../assets/images/box_negative--blue.svg");
+    }
+  }
+  &.btn__arrow::after {
+    content: url("../../assets/images/icons/icon_arrow--right.svg");
+    position: absolute;
+    top: 14px;
+    right: 30px;
+  }
+    //.btn--trapeze is a flex item (from a column)
+  &.btn--trapeze {
+    align-self: center;
+    padding-right: var(--spacing-xxl-2);
+    position: relative;
+    overflow: visible;
+    &::before {
+      position: absolute;
+      width: 29.5px;
+      left: -0.5px;
+      top: -0.8px;
+    }
+    &::after {
+      position: absolute;
+      width: 29.5px;
+      transform: scaleX(-1);
+      right: -0.9px;
+      top: -0.8px;
+    }
+    &:not(.bg--grey)::before,
+    &:not(.bg--grey)::after {
+      content: url("../../assets/images/box_negative.svg");
+    }
+    &.bg--grey::before,
+    &.bg--grey::after {
+      content: url("../../assets/images/box_negative--grey.svg");
+    }
+  }
+}
+
+/* White Circle */
+.circle-white {
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+
+  border: 4px solid #FFFFFF;
+  border-radius: 50px;
+}
+
+/* In-page Navigation Arrows*/
+.nav-up {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  z-index: 6;
+  img {
+    transform: scaleY(-1);
+  }
+  &.at-top {
+    bottom: 0;
+    top: 20px;
+  }
+}
+.nav-down {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  z-index: 6;
+  }

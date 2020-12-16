@@ -1,0 +1,96 @@
+/* General Stylings */
+.wrapper {
+  display: grid;
+  grid-template-columns: auto minmax(auto, 1366px) auto;
+}
+.header__wrapper, .main__wrapper, .footer {
+  grid-column: 2;
+}
+/*** Header ***/
+.header {
+  &__wrapper {
+    position: relative;
+    background-color: var(--blue);
+    z-index: 5;
+    img {
+      cursor: pointer;
+    }
+    /* When the menu is open */
+    &.is-open {
+      .header__top {
+        display: none;
+      }
+      .header-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+    // For testing purposes, it will be deleted
+    &.testing {
+      .header__top {
+        display: flex;
+      }
+      .header-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        height: 400px;
+      }
+    }
+  }
+  &__container {
+    box-shadow: var(--top-layer);
+  }
+  &__top {
+    padding: var(--spacing-m) var(--spacing-xl);
+    & a {
+      height: 43px; 
+      // Not sure why, the <a> was 48px by default, having extra space on the bottom and putting it off center
+    }
+  }
+  &__logo {
+    width: 180px;
+  }
+  &-menu {
+    background-color: var(--blue);
+    padding: var(--spacing-xl) var(--spacing-xxl);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    display: none;
+    &__top {
+      display: block;
+    }
+    &__lang-nav {
+      .lang + .lang {
+        position: relative;
+        padding-left: var(--spacing-xxl);
+        &::before {
+          content: "|";
+          position: absolute;
+          left: 14px;
+        }
+      }
+    }
+    &__nav {
+      padding-top: var(--spacing-xxl-3);
+    }
+    &__item + &__item {
+      padding-top: var(--spacing-l);
+    }
+    &__bottom {
+    }
+    &__logo {
+      width: 182px;
+    }
+    &__social {
+      padding-top: var(--spacing-l);
+    }
+  }
+}

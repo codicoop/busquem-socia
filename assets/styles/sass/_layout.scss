@@ -1,0 +1,289 @@
+/*** Main  ***/
+.main {
+  height: 300px;
+  &__wrapper {
+    position: relative;
+    box-shadow: var(--drop);
+    z-index: 2;
+  }
+}
+main img {
+  width: 100%;
+}
+
+
+/*** Page - Contact ***/
+.contact {
+  &__container {
+    padding: var(--spacing-xxl-3) var(--spacing-xxl) 
+    var(--spacing-xxl-4) var(--spacing-xxl);
+  }
+  &__title {
+    padding-bottom: var(--spacing-l);
+  }
+  &__intro {
+    padding-bottom: var(--spacing-s);
+  }
+  &__social {
+    padding-bottom: var(--spacing-xxl-3);
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      display: grid;
+      grid-template-columns: 100px auto;
+    }
+    &__submit {
+      margin-top: var(--spacing-xxl-2);
+    }
+  }
+}
+
+/*** Page - Inici ***/
+.inici {
+  // &__container {}
+  section {
+    position: relative;
+  }
+
+  //Section Intro
+  .intro {
+    background-image: url("../../assets/images/home_1.png");
+  }
+
+  //Section Acompanyament
+  &__acompanyamemt {
+    /* Section Acompanyament */
+    padding: var(--spacing-xxl-3) var(--spacing-xxl) var(--spacing-xxl-4) var(--spacing-xxl);
+    display: flex;
+    flex-direction: column;
+
+    .inici-acompanyament {
+      &__title {
+        padding-bottom: var(--spacing-l);
+      }
+      &__text {
+        padding-bottom: var(--spacing-xl);
+      }
+      &__img {
+        padding-bottom: var(--spacing-xxl-4);
+      }
+      // &__btn {}
+    }
+  }
+
+  //Section Estudi
+  &__estudi {
+    box-shadow: var(--top-layer);
+    .inici-estudi {
+      &__img {
+        padding-bottom: var(--spacing-s);
+      }
+      &__box {
+        background-color: var(--grey-light);
+        padding: var(--spacing-xxl-2) var(--spacing-xxl) 70px var(--spacing-xxl);
+        display: flex;
+        flex-direction: column;
+      }
+      &__title {
+        padding-bottom: var(--spacing-l);
+      }
+      &__text {
+        padding-bottom: var(--spacing-xl);
+      }
+      // &__btn { }
+    }
+  }
+
+  //Section Filosofia
+  &__filosofia {
+    .inici-filosofia {
+      &__title {
+        padding: var(--spacing-xxl-2) 0 var(--spacing-xl) var(--spacing-xxl);
+        width: 50%;
+      }
+      // &__img { }
+      &__box {
+        padding: var(--spacing-xl) var(--spacing-xxl) var(--spacing-xxl-4) var(--spacing-xxl);
+        display: flex;
+        flex-direction: column;
+      }
+      &__text {
+        padding-bottom: 55px;
+      }
+      // &__btn { }
+    }
+  }
+  //Section Vacants
+  &__vacants {
+    background-color: var(--blue);
+    padding: var(--spacing-xxl-4) 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .inici-vacants__circle {
+      margin-bottom: 55px;
+    }
+    .inici-vacants__title {
+      width: 180px;
+      text-align: center;
+    }
+  }
+  // Section Contacte
+  &__contacte {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      width: 80%;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+  }
+}
+
+/*** Page - Acompanyament ***/
+.acompanyament {
+  .intro {
+    background-image: url("http://placekitten.com/700/502");
+  }
+  &__section {
+    position: relative;
+    z-index: 1;
+  }
+  &__title {
+    padding: var(--spacing-xxl-3) var(--spacing-xxl) var(--spacing-l) var(--spacing-xxl);
+    z-index: 1;
+  }
+  &__text {
+    padding: 0 var(--spacing-xxl) var(--spacing-xxl-3) var(--spacing-xxl);
+    z-index: 1;
+  }
+  &__card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  &__box {
+    position: relative;
+    background-color: transparent;
+    background-image: url("../../assets/images/box_big.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 93px 0 var(--spacing-xxl-3) 0;
+    z-index: 5;
+
+    grid-column: 1;
+    grid-row: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .acompanyament__img {
+      width: 65%;
+    }
+  }
+  &__deco {
+    grid-column: 1;
+    grid-row: 1;
+
+    position: relative;
+    background-color: transparent;
+    background-image: url("../../assets/images/box_big.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    top: -10px;
+    left: -8px;
+    width: 120%;
+    height: 200px;
+
+    z-index: 2;
+  }
+  &__deco + &__deco {
+    top: -20px;
+    left: -10px;
+  }
+  &__deco + &__deco + &__deco {
+    top: -30px;
+    left: -12px;
+  }
+  &__section {
+    &#acomp-5 {
+      background-color: var(--blue);
+
+      .acompanyament__img {
+        padding-bottom: var(--spacing-xxl);
+      }
+      .acompanyament__btn {
+        position: relative;
+        text-align: right;
+        margin-bottom: var(--spacing-xxl-4);
+        padding-right: var(--spacing-xxl-3);
+        align-self: flex-end;
+        width: 309px;
+        &::before {
+          content: url("../../assets/images/box_negative--blue.svg");
+          position: absolute;
+          width: 43px;
+          left: -0.6px;
+          top: -0.8px;
+        }
+        &::after {
+          content: url("../../assets/images/icons/icon_arrow--right.svg");
+          position: absolute;
+          top: 25px;
+          right: 20px;
+        }
+      }
+    }
+  }
+}
+
+/*** Page - Nosaltres ***/
+.nosaltres {
+  background-color: var(--blue);
+  // &__container {}
+  // &__avui {}
+  &__card {
+    padding: var(--spacing-xxl-4) var(--spacing-xxl) var(--spacing-xxl-3) var(--spacing-xxl);
+    display: flex;
+    flex-direction: column;
+
+    .circle-white {
+      margin-bottom: var(--spacing-xxl-3);
+      align-self: center;
+      img {
+        width: 28px;
+      }
+    }
+    .card__title {
+      padding-bottom: var(--spacing-l);
+    }
+    .card__text {}
+  }
+  .intro {
+    background-image: url("http://placekitten.com/700/501");
+  }
+  .intro-2 {
+    background-image: url("http://placekitten.com/700/503");
+  }
+  // &__dema {}
+  // &__perfils {}
+  &__btn {
+    margin-bottom: var(--spacing-xxl-2);
+  }
+  .btn--left {
+    padding-right: 80px;
+  }
+  .btn__arrow::after {
+    right: 50px;
+  }
+}
+
