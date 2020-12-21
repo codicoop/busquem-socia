@@ -11,7 +11,7 @@ Les condicions laborals s’equiparen entre tothom de l’equip, per ara el sou 
 
 També estem molt interessades en conèixer gent de valors afins al nostre projecte, que ens vulgui conèixer, fer xarxa i intercanviar experiències, possibles projectes… Així com altres programadores de back-end o fins i tot persones que els agradi el projecte i ens vulguin donar suport.
 
-## Com som?
+# Com som?
 
 Tenim molts ideals i somnis sobre com volem fer les coses de forma diferent, però el projecte és nou i hem d’anar avançant pas a pas. Fins ara, això és el que estem portant a la pràctica:
 
