@@ -329,9 +329,16 @@ blockquote {
 }
 
 ul {
+  position: relative;
   list-style-position: inside;
-  list-style: disc;
+  list-style: none;
   padding-left: 20px;
+}
+li::before {
+  content: "@";
+  position: absolute;
+  left: 20px;
+  color: var(--blue);
 }
 
 ol {
