@@ -119,7 +119,7 @@ aside#sidebar {
   padding-left: 20px;
   font-size: 12px;
   line-height: 1.3;
-  background-color: var(--white);
+  background-color: transparent;
 }
 
 aside#sidebar h3 {
@@ -189,30 +189,30 @@ ul, ol, dl {
 }
 
 
-/* COMMON STYLES */
+// /* COMMON STYLES */
 
-hr {
-  height: 0;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border: 0;
-  border-top: solid 1px #ddd;
-}
+// hr {
+//   height: 0;
+//   margin-top: 1em;
+//   margin-bottom: 1em;
+//   border: 0;
+//   border-top: solid 1px #ddd;
+// }
 
-table {
-  width: 100%;
-  border: 1px solid #ebebeb;
-}
+// table {
+//   width: 100%;
+//   border: 1px solid #ebebeb;
+// }
 
-th {
-  font-weight: 500;
-}
+// th {
+//   font-weight: 500;
+// }
 
-td {
-  font-weight: 300;
-  text-align: center;
-  border: 1px solid #ebebeb;
-}
+// td {
+//   font-weight: 300;
+//   text-align: center;
+//   border: 1px solid #ebebeb;
+// }
 
 .input {
   width: 100%;
@@ -225,13 +225,23 @@ td {
   .input__textfield {
     background-color: transparent;
     border: 1px solid var(--blue);
+    line-height: 18px;
     border-radius: 4px;
     padding: 4px 12px;
     font-size: 0.875rem;
+    margin-top: 6px;
+  }
+  textarea {
+    border-bottom: 1px var(--blue) solid;
+    appearance: none;
+    border: none;
+    resize: vertical;
+    outline: none;
+    overflow: auto;
+    font-family: inherit;
+    color: inherit;
   }
 }
-
-
 
 /* GENERAL ELEMENT TYPE STYLES */
 

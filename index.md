@@ -3,6 +3,7 @@ layout: default
 ---
 
 # Què busquem
+
 A Codi Cooperatiu cerquem una **desenvolupadora front-end sènior** que vulgui formar part de la nostra cooperativa de treball. Fins ara ens hem dedicat més a la part de back-end i volem ampliar la nostra oferta per poder oferir solucions més completes. 
 
 Hauràs de crear l’àrea de front-end, decidir amb quines tecnologies treballem i com hem d’adaptar els processos de testing, deploys, etc. Volem incorporar Vue, React o Angular als nostres projectes i experimentar amb progressive web apps. Poden sorgir projectes que requereixin React Native o similars.
