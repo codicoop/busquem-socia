@@ -38,7 +38,7 @@
 
         <aside id="sidebar">
           <h3>T'interessa?</h3>
-          <form class="input" method="POST">
+          <!-- <form class="input" method="POST">
             <label class="input__item">Nom
               <input class="input__textfield" type="text" id="contact-nom" name="contact-nom">
             </label>
@@ -49,6 +49,27 @@
               <textarea class="input__textfield" name="contact-missatge" required></textarea>
             </label>
             <button type="submit" class="button">Contacta'ns!</button>
+          </form> -->
+
+          <form id="form-contact input" action="https://formcarry.com/s/Bk5HJXbdM" method="POST">
+            <label class="input__item">Nom
+              <input type="text" name="name" class="input__textfield" required="">
+            </label>
+            <label class="input__item">Email
+              <input type="email" name="email" class="input__textfield" required="">
+            </label>
+            <label class="input__item">Títol
+              <input type="text" name="_subject" class="input__textfield" required="">
+            </label>
+            <label class="input__item">Missatge
+              <textarea name="message" class="input__textfield" required=""></textarea>
+            </label>
+            <input type="text" name="_gotcha" style="display:none">
+            <input type="hidden" name="_next" value="/">
+            <div id="form-submit" class="input__item">
+              <input type="submit" class="input__submit" value="Enviar">
+            </div>
+            <div id="form-thankyou" style="display:none;">Moltes gràcies pel teu missatge!</div>
           </form>
         </aside>
       </div>
