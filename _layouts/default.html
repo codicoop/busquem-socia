@@ -19,47 +19,48 @@
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <a href="{{ '/' | absolute_url }}">
-          <h1>{{ site.title }}</h1>
-        </a>
-        <h2>{{ site.description  }}</h2>
-        <a href="{{ site.github.repository_url }}" class="button">Contacta'ns!</a>
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <p>Aquí va el main content</p>
-          {{ content }}
-        </section>
-
-        <aside id="sidebar">
-          <h3>T'interessa?</h3>
-          <form id="form-contact" class="input" action="https://formcarry.com/s/Bk5HJXbdM" method="POST">
-            <label class="input__item">Nom
-              <input type="text" name="name" class="input__textfield" required>
-            </label>
-            <label class="input__item">Email
-              <input type="email" name="email" class="input__textfield" required>
-            </label>
-            <label class="input__item">Títol
-              <input type="text" name="_subject" class="input__textfield" required>
-            </label>
-            <label class="input__item">Missatge
-              <textarea name="message" class="input__textfield" required></textarea>
-            </label>
-            <input type="text" name="_gotcha" style="display:none">
-            <input type="hidden" name="_next" value="/">
-            <div id="form-submit" class="input__item">
-              <input type="submit" class="input__submit" value="Enviar">
-            </div>
-            <div id="form-thankyou" style="display:none;">Moltes gràcies pel teu missatge!</div>
-          </form>
-        </aside>
-      </div>
+    <div class="wrapper">
+      <header class="header__wrapper">
+        <div class="header__container">
+          <a href="{{ '/' | absolute_url }}">
+            <h1>{{ site.title }}</h1>
+            <img src="{{ '/assets/images/logo_full--blau'}}" alt="Logo Codi Cooperatiu">
+          </a>
+          <h2>{{ site.description }}</h2>
+          <!-- <a href="{{ site.github.repository_url }}" class="button">Contacta'ns!</a> -->
+        </div>
+      </header>
+      <main class="main__wrapper">
+        <div class="main__container clearfix">
+          <section class="content">
+            <p>Aquí va el main content</p>
+            {{ content }}
+          </section>
+          <aside class="sidebar">
+            <h3>T'interessa?</h3>
+            <form id="form-contact" class="input" action="https://formcarry.com/s/Bk5HJXbdM" method="POST">
+              <label class="input__item">Nom
+                <input type="text" name="name" class="input__textfield" required>
+              </label>
+              <label class="input__item">Email
+                <input type="email" name="email" class="input__textfield" required>
+              </label>
+              <label class="input__item">Títol
+                <input type="text" name="_subject" class="input__textfield" required>
+              </label>
+              <label class="input__item">Missatge
+                <textarea name="message" class="input__textfield" required></textarea>
+              </label>
+              <input type="text" name="_gotcha" style="display:none">
+              <input type="hidden" name="_next" value="/">
+              <div id="form-submit" class="input__item">
+                <input type="submit" class="input__submit" value="Enviar">
+              </div>
+              <div id="form-thankyou" style="display:none;">Moltes gràcies pel teu missatge!</div>
+            </form>
+          </aside>
+        </div>
+      </main>
     </div>
 
     {% if site.google_analytics %}
