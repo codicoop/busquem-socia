@@ -12,12 +12,27 @@
   --lilac: #d09bfa;
 }
 
+button, input {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.375rem;
-  color: #333333;
+  line-height: 1.5rem;
+  color: var(--grey-text);
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
 }
 
@@ -42,6 +57,7 @@ header {
 }
 
 header h1 {
+  max-width: 80%;
   margin-top: 0;
   margin-bottom: 0.2em;
   font-size: 72px;
@@ -52,7 +68,7 @@ header h1 {
 }
 
 header h2 {
-  width: 50%;
+  max-width: 60%;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 26px;
@@ -94,8 +110,9 @@ aside#sidebar {
 
 aside#sidebar h3 {
   font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
+  letter-spacing: 1.2;
 }
 
 aside#sidebar p.repo-owner,
@@ -184,14 +201,22 @@ td {
   border: 1px solid #ebebeb;
 }
 
-form {
+.input {
   padding: 20px;
-  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+.input .input__item {
+  width: 90%;
+  background-color: transparent;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  padding-bottom: 1rem;
 }
 
 /* GENERAL ELEMENT TYPE STYLES */
 #main-content h1 {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 0;
   font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 2.8em;
@@ -209,6 +234,7 @@ form {
 }
 
 #main-content h2 {
+  padding-top: 2rem;
   margin-bottom: 8px;
   font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 22px;
@@ -310,7 +336,7 @@ ul {
   position: relative;
   list-style-position: inside;
   list-style: none;
-  padding-left: 20px;
+  padding-left: 60px;
   text-align: justify;
 }
 
@@ -319,7 +345,8 @@ li::before {
   position: absolute;
   font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   font-size: 1rem;
-  left: -20px;
+  font-weight: bold;
+  left: -10px;
   color: var(--blue);
 }
 

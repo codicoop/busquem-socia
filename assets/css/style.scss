@@ -124,8 +124,9 @@ aside#sidebar {
 
 aside#sidebar h3 {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
+  letter-spacing: 1.2;
 }
 
 aside#sidebar p.repo-owner,
@@ -217,13 +218,12 @@ td {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  input {
-    
-  }
   .input__item {
+    width: 90%;
     background-color: transparent;
     border: 1px solid var(--blue);
     border-radius: 4px;
+    padding-bottom: 1rem;
   }
 }
 
