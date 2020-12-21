@@ -58,13 +58,11 @@ header {
 
 header h1 {
   max-width: 80%;
-  margin-top: 0;
-  margin-bottom: 0.2em;
+  padding-bottom: 1.5rem;
   font-size: 72px;
   font-weight: normal;
-  line-height: 1;
+  line-height: 1rem;
   color: var(--white);
-  letter-spacing: -1px;
 }
 
 header h2 {
