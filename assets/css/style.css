@@ -233,6 +233,7 @@ aside.sidebar {
   border: 4px dashed var(--blue);
   border-radius: 20px;
   position: sticky;
+  top: 0;
 }
 
 aside.sidebar h3 {
