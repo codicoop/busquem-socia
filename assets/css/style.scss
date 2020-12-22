@@ -285,14 +285,18 @@ aside.sidebar p {
     justify-self: end;
     text-align: center;
     width: 100px;
+    margin-bottom: 1rem;
     &:hover {
       background-color: var(--darker-blue);
     }
   }
 }
 .avis {
+  font-size: 0.75rem;
   font-style: italic;
   text-align: left;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* GENERAL ELEMENT TYPE STYLES */
