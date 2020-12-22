@@ -286,6 +286,8 @@ aside.sidebar p {
   padding: 6px 18px;
   border-radius: 4px;
   align-self: end;
+  text-align: center;
+  width: 100px;
 }
 .input .input__submit:hover {
   background-color: var(--darker-blue);
