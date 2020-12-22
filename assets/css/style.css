@@ -310,7 +310,7 @@ aside.sidebar p {
   font-size: 2.8rem;
   font-weight: 800;
   color: var(--grey-text);
-  text-indent: 6px;
+  text-indent: 37px;
 }
 
 .content h1:before {
@@ -325,7 +325,7 @@ aside.sidebar p {
   font-size: 22px;
   font-weight: bold;
   color: var(--grey-text);
-  text-indent: 4px;
+  text-indent: 33px;
 }
 
 .content h2:before {
@@ -354,7 +354,7 @@ ul {
 li::before {
   content: url(../images/arrow.svg);
   position: absolute;
-  left: 27px;
+  left: 35px;
 }
 
 ol {
