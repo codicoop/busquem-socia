@@ -316,7 +316,7 @@ aside.sidebar p {
 .content h1:before {
   padding-right: 0.3em;
   margin-left: -0.9em;
-  content: url(assets/images/slash.svg);
+  content: url(../images/slash.svg);
 }
 
 .content h2 {
@@ -329,74 +329,9 @@ aside.sidebar p {
 }
 
 .content h2:before {
-  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   padding-right: 0.3em;
   margin-left: -1.5em;
-  content: "//";
-  color: var(--blue);
-}
-
-.content h3 {
-  margin-top: 24px;
-  margin-bottom: 8px;
-  font-size: 18px;
-  font-weight: bold;
-  color: var(--grey-text);
-  text-indent: 3px;
-}
-
-.content h3:before {
-  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
-  padding-right: 0.3em;
-  margin-left: -2em;
-  content: "///";
-  color: var(--blue);
-}
-
-.content h4 {
-  margin-bottom: 8px;
-  font-size: 15px;
-  font-weight: bold;
-  color: var(--grey-text);
-  text-indent: 3px;
-}
-
-h4:before {
-  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
-  padding-right: 0.3em;
-  margin-left: -2.8em;
-  content: "////";
-  color: var(--blue);
-}
-
-.content h5 {
-  margin-bottom: 8px;
-  font-size: 14px;
-  color: var(--grey-text);
-  text-indent: 3px;
-}
-
-h5:before {
-  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
-  padding-right: 0.3em;
-  margin-left: -3.2em;
-  content: "/////";
-  color: var(--blue);
-}
-
-.content h6 {
-  margin-bottom: 8px;
-  font-size: 0.8em;
-  color: var(--grey-text);
-  text-indent: 3px;
-}
-
-h6:before {
-  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
-  padding-right: 0.3em;
-  margin-left: -3.7em;
-  content: "//////";
-  color: var(--blue);
+  content: url(../images/slash--double.svg);
 }
 
 p {
@@ -417,13 +352,9 @@ ul {
 }
 
 li::before {
-  content: "@";
+  content: url(../images/arrow.svg);
   position: absolute;
-  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
-  font-size: 1rem;
-  font-weight: bold;
   left: 27px;
-  color: var(--blue);
 }
 
 ol {
