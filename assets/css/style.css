@@ -294,11 +294,11 @@ aside.sidebar p {
 .input .input__submit:hover {
   background-color: var(--darker-blue);
 }
-
-.avis {
+.input .avis {
+  grid-column: 2;
   font-size: 0.75rem;
   font-style: italic;
-  text-align: left;
+  text-align: right;
   margin-bottom: 0;
   padding-bottom: 0;
 }

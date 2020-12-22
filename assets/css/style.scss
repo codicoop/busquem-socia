@@ -285,14 +285,16 @@ aside.sidebar p {
       background-color: var(--darker-blue);
     }
   }
+  .avis {
+    grid-column: 2;
+    font-size: 0.75rem;
+    font-style: italic;
+    text-align: right;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
-.avis {
-  font-size: 0.75rem;
-  font-style: italic;
-  text-align: left;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
+
 
 /* GENERAL ELEMENT TYPE STYLES */
 
