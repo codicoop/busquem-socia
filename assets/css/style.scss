@@ -394,19 +394,6 @@ footer a:hover {
   color: #444;
 }
 
-/* MISC */
-.clearfix:after {
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-  content: '.';
-}
-
-.clearfix {display: inline-block;}
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
-
 /* #Media Queries
 ================================================== */
 
