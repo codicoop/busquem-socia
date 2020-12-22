@@ -82,6 +82,7 @@ header h2 {
 .main__container {
   display: grid;
   grid-template-columns: 300px 1fr 1/3fr;
+  gap: 0 2rem;
 }
 
 .main__wrapper {
@@ -96,10 +97,6 @@ header h2 {
 
 .content img {
   max-width: 100%;
-}
-
-#downloads {
-  margin-bottom: 40px;
 }
 
 a.button {
@@ -179,6 +176,7 @@ aside.sidebar h3 {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 0 1rem;
 }
 .input .input__label {
   padding-bottom: 6px;

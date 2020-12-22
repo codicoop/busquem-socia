@@ -88,30 +88,22 @@ header h2 {
   color: var(--blue);
   letter-spacing: 0;
 }
-
 .main__container {
   display: grid;
   grid-template-columns: 300px 1fr 1/3fr;
+  gap: 0 2rem;
 }
-
 .main__wrapper {
   padding-top: 30px;
   border-top: solid 1px #fff;
 }
-
 .content {
   grid-column: 2;
   width: 690px;
 }
-
 .content img {
   max-width: 100%;
 }
-
-#downloads {
-  margin-bottom: 40px;
-}
-
 a.button {
   padding: 1rem 2.5rem;
   color: #fff;
@@ -212,6 +204,7 @@ aside.sidebar h3 {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  gap: 0 1rem;
 
   .input__label {
     padding-bottom: 6px;
