@@ -314,11 +314,9 @@ aside.sidebar p {
 }
 
 .content h1:before {
-  font-family: "Architects Daughter", "Helvetica Neue", Helvetica, Arial, serif;
   padding-right: 0.3em;
   margin-left: -0.9em;
-  color: var(--blue);
-  content: "/";
+  content: url(assets/images/slash.svg);
 }
 
 .content h2 {
