@@ -150,10 +150,9 @@ header img {
 }
 .main__container {
   padding: 1.5rem;
-  // display: grid;
-  // grid-template-columns: 50px 0.6fr 0.4fr;
-  // gap: 0 4rem;
-  // align-items: start;
+  display: flex;
+  flex-direction: column;
+
 }
 .main__wrapper {
   grid-column: 2;
@@ -257,10 +256,8 @@ aside.sidebar h3 {
   font-size: 2rem;
   font-weight: 800;
   color: var(--grey-text);
-  text-indent: 25px;
 }
 .content h1:before {
-  margin-left: 1.3rem;
   content: url(../images/slash.svg);
 }
 .content h2 {
@@ -297,7 +294,33 @@ li::before {
   left: 0px;
 }
 
-@media (min-width: 950px) {
+@media(min-width: 768px) {
+  .header__container, .main__container {
+    padding: 2rem 2rem 2rem 4rem;
+  }
+  aside.sidebar {
+    max-width: 500px;
+    margin: 0 auto;
+    p {
+      margin-bottom: 50px;
+    }
+  }
+  .content {
+    margin-bottom: 2rem;
+    max-width: ;
+  }
+  .input {
+    margin-top: 30px
+  }
+  ul {
+    padding: 40px;
+  }
+  li::before {
+    left: 15px;
+  }
+}
+
+@media (min-width: 1050px) {
   .header__container {
     padding: 3rem 3rem 3rem 146px;
   }
