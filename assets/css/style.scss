@@ -91,7 +91,7 @@ header h2 {
 
 .main__container {
   display: grid;
-  grid-template-columns: 60px 1fr 1/3fr;
+  grid-template-columns: 300px 1fr 1/3fr;
 }
 
 .main__wrapper {
@@ -191,7 +191,7 @@ ul, ol, dl {
 /* Formulari */
 aside.sidebar {
   grid-column: 3;
-  min-height: 504px;
+  padding: 1.5rem;
   font-size: 0.875rem;
   line-height: 1.3;
   background-color: transparent;
@@ -200,6 +200,8 @@ aside.sidebar {
 }
 
 aside.sidebar h3 {
+  margin: 0;
+  padding-bottom: 2rem;
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 1.2;
@@ -208,19 +210,22 @@ aside.sidebar h3 {
 .input {
   width: 100%;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  .input__item {
-    padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  .input__label {
+    padding-bottom: 6px;
+    grid-column: 1;
   }
   .input__textfield {
+    grid-column: 2;
     background-color: transparent;
     border: 1px solid var(--blue);
     line-height: 18px;
     border-radius: 4px;
     padding: 4px 12px;
     font-size: 0.875rem;
-    margin-top: 6px;
+    margin-bottom: 1rem;
     text-align: left;
   }
   textarea {
@@ -232,6 +237,16 @@ aside.sidebar h3 {
     overflow: auto;
     font-family: inherit;
     color: inherit;
+  }
+  .input__submit {
+    grid-column: 1 / span 2;
+    background-color: var(--blue);
+    border: 2px solid var(--darker-blue);
+    padding: 6px 18px;
+    border-radius: 4px;
+    &:hover {
+      background-color: var(--darker-blue);
+    }
   }
 }
 

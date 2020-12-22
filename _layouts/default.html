@@ -39,23 +39,19 @@
           <aside class="sidebar">
             <h3>T'interessa?</h3>
             <form id="form-contact" class="input" action="https://formcarry.com/s/Bk5HJXbdM" method="POST">
-              <label class="input__item">Nom
-                <input type="text" name="name" class="input__textfield" required>
-              </label>
-              <label class="input__item">Email
-                <input type="email" name="email" class="input__textfield" required>
-              </label>
-              <label class="input__item">Títol
-                <input type="text" name="_subject" class="input__textfield" required>
-              </label>
-              <label class="input__item">Missatge
-                <textarea name="message" class="input__textfield" required></textarea>
-              </label>
-              <input type="text" name="_gotcha" style="display:none">
-              <input type="hidden" name="_next" value="/">
-              <div id="form-submit" class="input__item">
+              <label class="input__label" for="name">Nom</label>
+              <input type="text" name="name" class="input__textfield" required>
+              <label class="input__label" for="email">Email</label>
+              <input type="email" name="email" class="input__textfield" required>
+              <label class="input__label" for="_subject">Títol</label>
+              <input type="text" name="_subject" class="input__textfield" required>
+              <label class="input__label" for="message">Missatge</label>
+              <textarea name="message" class="input__textfield" required></textarea>
+              <div id="form-submit" class="input__label">
                 <input type="submit" class="input__submit" value="Enviar">
               </div>
+              <input type="text" name="_gotcha" style="display:none">
+              <input type="hidden" name="_next" value="/">
               <div id="form-thankyou" style="display:none;">Moltes gràcies pel teu missatge!</div>
             </form>
           </aside>
