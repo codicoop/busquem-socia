@@ -121,8 +121,12 @@ a {
     color: var(--darkerblue);
   }
 }
-
+.wrapper {
+  display: grid;
+  grid-template-columns: auto minmax(auto, 1366px) auto;
+}
 .header__wrapper {
+  grid-column: 2;
   background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
   border-bottom: solid 3px var(--darker-blue);
 }
@@ -147,16 +151,15 @@ header h2 {
 }
 .main__container {
   display: grid;
-  grid-template-columns: 300px 1fr 0.3fr;
+  grid-template-columns: 100px 1fr 0.3fr;
   gap: 0 2rem;
 }
 .main__wrapper {
-  padding-top: 30px;
-  border-top: solid 1px #fff;
+  grid-column: 2;
+  padding: 2rem;
 }
 .content {
   grid-column: 2;
-  width: 690px;
 }
 .content img {
   max-width: 100%;
