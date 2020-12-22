@@ -291,12 +291,17 @@ aside.sidebar p {
   background-color: var(--blue);
   padding: 6px 18px;
   border-radius: 4px;
-  align-self: end;
+  justify-self: end;
   text-align: center;
   width: 100px;
 }
 .input .input__submit:hover {
   background-color: var(--darker-blue);
+}
+
+.avis {
+  font-style: italic;
+  text-align: left;
 }
 
 /* GENERAL ELEMENT TYPE STYLES */
