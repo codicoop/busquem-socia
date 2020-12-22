@@ -115,6 +115,9 @@ body {
   color: var(--grey-text);
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
 }
+strong {
+  font-weight: 600;
+}
 a {
   color: var(--blue);
   &:hover {
@@ -297,7 +300,6 @@ aside.sidebar p {
   color: var(--grey-text);
   text-indent: 6px;
 }
-
 .content h1:before {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   padding-right: 0.3em;
@@ -305,7 +307,6 @@ aside.sidebar p {
   color: var(--blue);
   content: "/";
 }
-
 .content h2 {
   padding-top: 2rem;
   margin-bottom: 8px;
@@ -321,7 +322,6 @@ aside.sidebar p {
   content: "//";
   color: var(--blue);
 }
-
 .content h3 {
   margin-top: 24px;
   margin-bottom: 8px;
@@ -330,7 +330,6 @@ aside.sidebar p {
   color: var(--grey-text);
   text-indent: 3px;
 }
-
 .content h3:before {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   padding-right: 0.3em;
@@ -338,7 +337,6 @@ aside.sidebar p {
   content: "///";
   color: var(--blue);
 }
-
 .content h4 {
   margin-bottom: 8px;
   font-size: 15px;
@@ -346,7 +344,6 @@ aside.sidebar p {
   color: var(--grey-text);
   text-indent: 3px;
 }
-
 h4:before {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   padding-right: 0.3em;
@@ -354,7 +351,6 @@ h4:before {
   content: "////";
   color: var(--blue);
 }
-
 .content h5 {
   margin-bottom: 8px;
   font-size: 14px;
@@ -368,7 +364,6 @@ h5:before {
   content: "/////";
   color: var(--blue);
 }
-
 .content h6 {
   margin-bottom: 8px;
   font-size: .8em;
@@ -382,20 +377,12 @@ h6:before {
   content: "//////";
   color: var(--blue);
 }
-
 p {
   margin-bottom: 20px;
 }
 p a {
   font-weight: 400;
 }
-
-// blockquote {
-//   padding: 0 0 0 30px;
-//   margin-bottom: 20px;
-//   font-size: 15px;
-//   border-left: 10px solid #e9e9e9;
-// }
 
 /* Llistats */
 ul {
@@ -447,7 +434,7 @@ ol {
 
 // /* All Mobile Sizes (devices and browser) */
 // @media only screen and (max-width: 767px) {
-//   .inner {
+//   .content {
 //     width: 93%;
 //   }
 //   header {

@@ -109,6 +109,10 @@ body {
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
 }
 
+strong {
+  font-weight: 600;
+}
+
 a {
   color: var(--blue);
 }
