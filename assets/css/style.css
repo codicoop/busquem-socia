@@ -180,6 +180,11 @@ header img {
   order: 2;
 }
 
+.main__container .section {
+  display: flex;
+  flex-direction: column;
+}
+
 a.button {
   margin: 0 auto;
   padding: 6px 12px;

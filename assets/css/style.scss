@@ -162,7 +162,10 @@ header img {
 .main__container .section3 { order: 4; }
 .main__container .section4 { order: 5; }
 .main__container .sidebar { order: 2; }
-
+.main__container .section {
+  display: flex;
+  flex-direction: column;
+}
 a.button {
   margin: 0 auto;
   padding: 6px 12px;
