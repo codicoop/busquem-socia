@@ -300,12 +300,12 @@ a.button :hover {
   padding-bottom: 1rem;
 }
 
-p {
-  padding-bottom: 20px;
+ul + .main__container h3 {
+  padding-bottom: 10px;
 }
 
-p a {
-  font-weight: 400;
+p {
+  padding-bottom: 20px;
 }
 
 /* Llistats */
@@ -404,7 +404,7 @@ li::before {
   }
 
   .sidebar p {
-    padding-bottom: 32px;
+    padding-bottom: 5px;
   }
 
   .main__container h1 {

@@ -280,12 +280,11 @@ a.button {
   font-weight: bold;
   padding-bottom: 1rem;
 }
-
+ul + .main__container h3 {
+  padding-bottom: 10px;
+}
 p {
   padding-bottom: 20px;
-}
-p a {
-  font-weight: 400;
 }
 
 /* Llistats */
@@ -361,7 +360,7 @@ li::before {
     top: 0;
   }
   .sidebar p {
-    padding-bottom: 32px;
+    padding-bottom: 5px;
   }
   .main__container h1 {
     padding-top: 1rem;
