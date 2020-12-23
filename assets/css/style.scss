@@ -152,18 +152,23 @@ header img {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  img {
+    max-width: 100%;
+  }
+}
+.main__container :nth-child(1) { order: 1; }
+.main__container :nth-child(2) { order: 3; }
+.main__container :nth-child(3) { order: 4; }
+.main__container :nth-child(4) { order: 5; }
+.main__container :nth-child(5) { order: 2; }
 
-}
-.content img {
-  max-width: 100%;
-}
 a.button {
   padding: 1rem 2.5rem;
   color: #fff;
 }
 
 /* Formulari */
-aside.sidebar {
+.sidebar {
   max-width: 500px;
   margin: 0 auto;
   padding: 1.5rem;
@@ -177,7 +182,7 @@ aside.sidebar {
   }
 }
 
-aside.sidebar h3 {
+.sidebar h3 {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1.2;
@@ -239,17 +244,17 @@ aside.sidebar h3 {
   }
 }
 
-.content h1 {
+.main__container h1 {
   padding-top: 1rem;
   padding-bottom: 2rem;
   font-size: 2rem;
   font-weight: 800;
   color: var(--grey-text);
 }
-.content h1:before {
+.main__container h1:before {
   content: url(../images/slash.svg);
 }
-.content h2 {
+.main__container h2 {
   padding-top: 2rem;
   margin-bottom: 8px;
   font-size: 22px;
@@ -257,7 +262,7 @@ aside.sidebar h3 {
   color: var(--grey-text);
   text-indent: 33px;
 }
-.content h2:before {
+.main__container h2:before {
   padding-right: 0.3em;
   margin-left: -1.5em;
   content: url(../images/slash--double.svg);
@@ -287,7 +292,7 @@ li::before {
   .header__container, .main__container {
     padding: 2rem 2rem 2rem 4rem;
   }
-  .content {
+  .main__container {
     margin-bottom: 2rem;
     max-width: 700px;
   }
@@ -321,38 +326,42 @@ li::before {
     gap: 0 4rem;
     align-items: start;
   }
-  .content {
+  .main__container :nth-child(1) { order: 0; }
+  .main__container :nth-child(2) { order: 0; }
+  .main__container :nth-child(3) { order: 0; }
+  .main__container :nth-child(4) { order: 0; }
+  .main__container :nth-child(5) { order: 0; }
+
+  .section {
     grid-column: 1;
   }
   /* Formulari */
-  aside.sidebar {
+  .sidebar {
     grid-column: 2;
     margin-top: 4rem;
     position: sticky;
     top: 0;
   }
-
-  aside.sidebar p {
+  .sidebar p {
     padding-bottom: 12px;
   }
-  
-  .content h1 {
+  .main__container h1 {
     padding-top: 1rem;
     padding-bottom: 2rem;
     font-size: 2.8rem;
     text-indent: 37px;
   }
-  .content h1:before {
+  .main__container h1:before {
     padding-right: 0.3em;
     margin-left: -0.9em;
   }
-  // .content h2 {
+  // .main__container h2 {
   //   padding-top: 2rem;
   //   margin-bottom: 8px;
   //   font-size: 22px;
   //   text-indent: 33px;
   // }
-  // .content h2:before {
+  // .main__container h2:before {
   //   padding-right: 0.3em;
   //   margin-left: -1.5em;
   // }
