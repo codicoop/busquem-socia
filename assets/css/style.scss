@@ -203,6 +203,7 @@ a.button {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 0 1rem;
+  padding-top: 2rem;
 
   .input__label {
     padding-bottom: 6px;
@@ -313,11 +314,8 @@ li::before {
     margin-bottom: 2rem;
     max-width: 700px;
   }
-  .input {
-    margin-top: 30px
-  }
   ul {
-    padding: 40px;
+    padding-left: 40px;
   }
   li::before {
     left: 15px;
@@ -357,6 +355,7 @@ li::before {
   /* Formulari */
   .sidebar {
     grid-column: 2;
+    grid-row: 1;
     margin-top: 4rem;
     position: sticky;
     top: 0;
@@ -373,11 +372,6 @@ li::before {
   .main__container h1:before {
     padding-right: 0.3em;
     margin-left: -0.9em;
-  }
-  .main__container h3:before {
-    padding-right: 0.3em;
-    margin-left: -1.5em;
-    content: url(../images/slash--triple.svg);
   }
   // .main__container h2 {
   //   padding-top: 2rem;
