@@ -120,10 +120,8 @@ strong {
   color: var(--darker-blue);
 }
 a {
-  color: var(--blue);
-  &:hover {
-    color: var(--darkerblue);
-  }
+  color: var(--black);
+  font-weight: bold;
 }
 .wrapper {
   display: grid;
@@ -136,6 +134,7 @@ a {
 }
 .main__wrapper {
   grid-column: 2;
+  color: var(--grey-text);
 }
 .header__container {
   padding: 1.5rem;
@@ -163,8 +162,16 @@ header img {
 .main__container :nth-child(5) { order: 2; }
 
 a.button {
-  padding: 1rem 2.5rem;
-  color: #fff;
+  margin: 0 auto;
+  padding: 6px 12px;
+  border: 2px solid var(--blue);
+  color: var(--grey-text);
+  background-color: transparent;
+  
+  :hover {
+    background-color: var(--blue);
+    color: var(--white);
+  }
 }
 
 /* Formulari */
@@ -178,7 +185,7 @@ a.button {
   border: 4px dashed var(--blue);
   border-radius: 20px;
   p {
-    margin-bottom: 5px;
+    padding-bottom: 5px;
   }
 }
 
@@ -249,17 +256,15 @@ a.button {
   padding-bottom: 2rem;
   font-size: 2rem;
   font-weight: 800;
-  color: var(--grey-text);
 }
 .main__container h1:before {
   content: url(../images/slash.svg);
 }
 .main__container h2 {
   padding-top: 2rem;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 22px;
   font-weight: bold;
-  color: var(--grey-text);
   text-indent: 33px;
 }
 .main__container h2:before {
@@ -267,8 +272,18 @@ a.button {
   margin-left: -1.5em;
   content: url(../images/slash--double.svg);
 }
+.main__container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.main__container h3:before {
+  padding-right: 0.3em;
+  margin-left: -1.5em;
+  content: url(../images/slash--triple.svg);
+}
 p {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 p a {
   font-weight: 400;
@@ -282,6 +297,10 @@ ul {
   padding-left: 20px;
   text-align: justify;
 }
+li {
+  padding-bottom: 1rem;
+}
+
 li::before {
   content: url(../images/arrow.svg);
   position: absolute;
@@ -323,8 +342,10 @@ li::before {
   .main__container {
     display: grid;
     grid-template-columns: 0.6fr 0.4fr;
+    grid-auto-rows: auto;
     gap: 0 4rem;
     align-items: start;
+    max-width: none;
   }
   .main__container :nth-child(1) { order: 0; }
   .main__container :nth-child(2) { order: 0; }
@@ -343,7 +364,7 @@ li::before {
     top: 0;
   }
   .sidebar p {
-    padding-bottom: 12px;
+    padding-bottom: 32px;
   }
   .main__container h1 {
     padding-top: 1rem;
@@ -374,5 +395,8 @@ li::before {
   li::before {
     position: absolute;
     left: 35px;
+  }
+  a.button {
+    display: none;
   }
 }

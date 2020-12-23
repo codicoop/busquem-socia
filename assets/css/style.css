@@ -114,10 +114,8 @@ strong {
 }
 
 a {
-  color: var(--blue);
-}
-a:hover {
-  color: var(--darkerblue);
+  color: var(--black);
+  font-weight: bold;
 }
 
 .wrapper {
@@ -133,6 +131,7 @@ a:hover {
 
 .main__wrapper {
   grid-column: 2;
+  color: var(--grey-text);
 }
 
 .header__container {
@@ -179,8 +178,15 @@ header img {
 }
 
 a.button {
-  padding: 1rem 2.5rem;
-  color: #fff;
+  margin: 0 auto;
+  padding: 6px 12px;
+  border: 2px solid var(--blue);
+  color: var(--grey-text);
+  background-color: transparent;
+}
+a.button :hover {
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 /* Formulari */
@@ -195,7 +201,7 @@ a.button {
   border-radius: 20px;
 }
 .sidebar p {
-  margin-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .sidebar h3 {
@@ -264,7 +270,6 @@ a.button {
   padding-bottom: 2rem;
   font-size: 2rem;
   font-weight: 800;
-  color: var(--grey-text);
 }
 
 .main__container h1:before {
@@ -273,10 +278,9 @@ a.button {
 
 .main__container h2 {
   padding-top: 2rem;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 22px;
   font-weight: bold;
-  color: var(--grey-text);
   text-indent: 33px;
 }
 
@@ -286,8 +290,20 @@ a.button {
   content: url(../images/slash--double.svg);
 }
 
+.main__container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.main__container h3:before {
+  padding-right: 0.3em;
+  margin-left: -1.5em;
+  content: url(../images/slash--triple.svg);
+}
+
 p {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 p a {
@@ -301,6 +317,10 @@ ul {
   list-style: none;
   padding-left: 20px;
   text-align: justify;
+}
+
+li {
+  padding-bottom: 1rem;
 }
 
 li::before {
@@ -350,8 +370,10 @@ li::before {
   .main__container {
     display: grid;
     grid-template-columns: 0.6fr 0.4fr;
+    grid-auto-rows: auto;
     gap: 0 4rem;
     align-items: start;
+    max-width: none;
   }
 
   .main__container :nth-child(1) {
@@ -387,7 +409,7 @@ li::before {
   }
 
   .sidebar p {
-    padding-bottom: 12px;
+    padding-bottom: 32px;
   }
 
   .main__container h1 {
@@ -411,6 +433,10 @@ li::before {
   li::before {
     position: absolute;
     left: 35px;
+  }
+
+  a.button {
+    display: none;
   }
 }
 
