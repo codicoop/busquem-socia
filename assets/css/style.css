@@ -305,8 +305,12 @@ a.button :hover {
   padding-bottom: 1rem;
 }
 
-ul + .main__container h3 {
-  padding-bottom: 10px;
+ul + h3 {
+  padding-top: 10px;
+}
+
+section + aside {
+  padding-top: 1rem;
 }
 
 p {
