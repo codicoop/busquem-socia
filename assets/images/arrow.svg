@@ -7,14 +7,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="42"
-   height="48.999924"
-   viewBox="0 0 42.000001 48.999924"
+   width="13"
+   height="21"
+   viewBox="0 0 13 21"
+   fill="none"
    version="1.1"
    id="svg4"
-   sodipodi:docname="box_test.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   style="fill:none">
+   sodipodi:docname="Union.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -38,26 +38,22 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1316"
-     inkscape:window-height="687"
+     inkscape:window-width="1154"
+     inkscape:window-height="480"
      id="namedview6"
      showgrid="false"
-     inkscape:zoom="6"
-     inkscape:cx="-22.916669"
-     inkscape:cy="24.206254"
-     inkscape:window-x="1"
+     inkscape:zoom="11.238095"
+     inkscape:cx="-6.625"
+     inkscape:cy="10.5"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg4"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:pagecheckerboard="true" />
+     inkscape:current-layer="svg4" />
   <path
-     d="M 42,48.999924 V 8e-6 L 27.423332,0 v 0 c 0,0 -4.152471,0.830703 -5.813512,3.322219 L 0.84727542,39.033745 c -2.49151492,4.152536 0.83048208,9.966178 5.81350608,9.966178 z"
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M0.886498 3.52253L1.97272 1.01089C2.09623 0.716133 2.4854 0.513327 2.72567 0.746517L12.4142 10.1494C12.4249 10.1598 12.4344 10.171 12.4426 10.1829C12.6091 10.3507 12.6729 10.6 12.495 10.7726L2.69504 20.2836C2.51277 20.4605 2.09219 20.2882 1.96971 19.9924L0.892116 17.4724C0.824707 17.2891 0.842731 17.1886 0.93387 17.1002L7.73435 10.5002L0.925835 3.89243C0.835732 3.80499 0.831086 3.6346 0.886498 3.52253Z"
+     fill="#333333"
      id="path2"
-     style="fill:#66cccc;fill-opacity:1;stroke-width:0.64975768"
-     inkscape:connector-curvature="0"
-     sodipodi:nodetypes="cccsccsc" />
+     style="fill:#66cccc;fill-opacity:1" />
 </svg>
