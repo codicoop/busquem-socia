@@ -103,7 +103,6 @@ body {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  text-align: justify;
   color: var(--grey-text);
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
 }
@@ -323,7 +322,6 @@ ul {
   list-style-position: inside;
   list-style: none;
   padding-left: 20px;
-  text-align: justify;
 }
 
 li {
@@ -409,7 +407,7 @@ li::before {
     grid-row: 1;
     margin-top: 4rem;
     position: sticky;
-    top: 0;
+    top: 3rem;
   }
 
   .sidebar p {
