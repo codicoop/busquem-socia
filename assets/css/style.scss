@@ -298,7 +298,6 @@ ul {
   list-style-position: inside;
   list-style: none;
   padding-left: 20px;
-  text-align: justify;
 }
 li {
   padding-bottom: 1rem;
@@ -391,7 +390,6 @@ li::before {
   /* Llistats */
   ul {
     padding-left: 60px;
-    text-align: justify;
   }
   li::before {
     position: absolute;
