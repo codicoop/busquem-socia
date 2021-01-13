@@ -96,6 +96,7 @@ a {
   --white: #ffffff;
   --red: #ff8686;
   --lilac: #d09bfa;
+  --top-layer: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -109,11 +110,11 @@ body {
 
 strong {
   font-weight: 600;
-  color: var(--darker-blue);
+  color: var(--black);
 }
 
 a {
-  color: var(--black);
+  color: var(--blue);
   font-weight: bold;
 }
 
@@ -128,8 +129,8 @@ h1, h2, h3 {
 
 .header__wrapper {
   grid-column: 2;
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
-  border-bottom: solid 3px var(--darker-blue);
+  background-color: var(--blue);
+  box-shadow: var(--top-layer);
 }
 
 .main__wrapper {
@@ -138,12 +139,6 @@ h1, h2, h3 {
 
 .header__container {
   padding: 1.5rem;
-}
-
-header h2 {
-  font-weight: normal;
-  line-height: 1.3;
-  color: var(--white);
 }
 
 header img {
