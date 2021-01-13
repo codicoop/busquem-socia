@@ -253,13 +253,17 @@ a.button {
 }
 
 .main__container h1 {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-  font-size: 2rem;
+  position: relative;
+  padding: 1rem 0 2rem 1rem;
+  font-size: 27px;
   font-weight: 800;
+  line-height: 1.2;
 }
 .main__container h1:before {
   content: url(../images/slash.svg);
+  position: absolute;
+  left: -23px;
+  top: -5px;
 }
 .main__container h2 {
   padding-top: 2rem;
