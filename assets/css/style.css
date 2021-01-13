@@ -268,7 +268,7 @@ a.button :hover {
   padding-bottom: 0;
 }
 
-.main__container h1, .main__container h2 {
+.section h1, .section h2 {
   padding-top: 1rem;
   padding-bottom: 2rem;
   font-size: 27px;
@@ -276,34 +276,30 @@ a.button :hover {
   line-height: 1.2;
 }
 
-.main__container h2 {
+.section h2 {
   padding-left: 1rem;
 }
 
-.main__container h2:before {
+.section h2:before {
   content: url(../images/slash--small.svg);
   position: relative;
   top: 6px;
 }
 
-.main__container h3 {
+.section h3 {
   padding-top: 2rem;
-  margin-bottom: 10px;
-  font-size: 22px;
+  padding-bottom: 1rem;
+  font-size: 18px;
   font-weight: bold;
   text-indent: 33px;
 }
 
-.main__container h3:before {
+.section h3:before {
   padding-right: 0.3em;
   margin-left: -1.5em;
   content: url(../images/slash--double.svg);
-}
-
-.main__container h3 {
-  font-size: 18px;
-  font-weight: bold;
-  padding-bottom: 1rem;
+  position: relative;
+  top: 7px;
 }
 
 ul + h3 {
@@ -334,6 +330,7 @@ li::before {
   content: url(../images/arrow.svg);
   position: absolute;
   left: 0px;
+  top: 2px;
 }
 
 @media (min-width: 768px) {
