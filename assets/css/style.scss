@@ -78,6 +78,9 @@ button, input {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
+input {
+  outline: none;
+}
 /*
 This next bit resets the box-sizing, the *better* way. For more info:
 https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
@@ -181,11 +184,12 @@ a.button {
   padding: 1.5rem;
   font-size: 0.875rem;
   line-height: 1.3;
-  background-color: transparent;
-  border: 4px dashed var(--blue);
-  border-radius: 20px;
+  background-color: var(--blue);
   p {
     padding-bottom: 5px;
+  }
+  a {
+    color: var(--white);
   }
 }
 
@@ -203,31 +207,48 @@ a.button {
   gap: 0 1rem;
   padding-top: 2rem;
 
-  .input__label {
-    padding-bottom: 6px;
+  &__label {
     grid-column: 1;
+    padding-bottom: 6px;
   }
-  .input__textfield {
+  &__textfield {
     grid-column: 2;
-    background-color: transparent;
-    border: 1.5px solid var(--blue);
-    line-height: 18px;
-    border-radius: 4px;
-    padding: 4px 12px;
-    font-size: 0.875rem;
-    margin-bottom: 1rem;
-    text-align: left;
     width: 100%;
     min-width: 150px;
+    text-align: left;
+    background-color: transparent;
+    border-bottom: 2px var(--blue) solid;
+    padding-top: 10px;
+    margin-bottom: 1rem;
   }
+  &__textfield--big {
+    position: relative;
+    height: 70px;
+    border-bottom: none;
+  }
+  &__textfield:last-of-type {
+    position: relative;
+    border-bottom: 2px var(--blue) solid;
+    &::before {
+      content: "";
+      width: 2px;
+      background-color: var(--blue);
+      position: absolute;
+      height: 105%;
+      bottom: -2px;
+      right: -2px;
+    }
+
   textarea {
-    border-bottom: 1px var(--blue) solid;
+    border-bottom: 2px var(--blue) solid;
     appearance: none;
     border: none;
     resize: vertical;
     outline: none;
     overflow: auto;
     font-family: inherit;
+    font-size: 16px;
+    line-height: 18px;
     color: inherit;
   }
   .input__submit {
@@ -259,17 +280,14 @@ a.button {
   font-weight: 800;
   line-height: 1.2;
 }
-.section h2 {
-  padding-left: 1rem;
-}
 .section h2:before {
   content: url(../images/slash--small.svg);
   position: relative;
-  top: 6px;
+  top: 10px;
 }
 .section h3 {
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   font-size: 18px;
   font-weight: bold;
   text-indent: 33px;
