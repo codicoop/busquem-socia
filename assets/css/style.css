@@ -282,8 +282,8 @@ a.button :hover {
 
 .main__container h2:before {
   content: url(../images/slash--small.svg);
-  left: -23px;
-  top: -5px;
+  position: relative;
+  top: 6px;
 }
 
 .main__container h3 {
