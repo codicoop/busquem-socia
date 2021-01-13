@@ -179,8 +179,9 @@ a.button {
 
 /* Formulari */
 .sidebar {
-  max-width: 500px;
-  margin: 0 auto;
+  position: relative;
+  width: 115%;
+  left: -24px;
   padding: 1.5rem;
   font-size: 0.875rem;
   line-height: 1.3;
@@ -207,6 +208,13 @@ a.button {
   gap: 0 1rem;
   padding-top: 2rem;
 
+  &__item + &__item {
+    padding-top: var(--spacing-m);
+  }
+  &__item {
+    border-bottom: 2px var(--white) solid;
+  }
+
   &__label {
     grid-column: 1;
     padding-bottom: 6px;
@@ -217,22 +225,21 @@ a.button {
     min-width: 150px;
     text-align: left;
     background-color: transparent;
-    border-bottom: 2px var(--blue) solid;
     padding-top: 10px;
     margin-bottom: 1rem;
   }
   &__textfield--big {
     position: relative;
     height: 70px;
-    border-bottom: none;
+    // border-bottom: none;
   }
   &__textfield:last-of-type {
     position: relative;
-    border-bottom: 2px var(--blue) solid;
+    // border-bottom: 2px var(--white) solid;
     &::before {
       content: "";
       width: 2px;
-      background-color: var(--blue);
+      background-color: var(--white);
       position: absolute;
       height: 105%;
       bottom: -2px;
@@ -251,7 +258,7 @@ a.button {
     line-height: 18px;
     color: inherit;
   }
-  .input__submit {
+  .&__submit {
     grid-column: 2;
     background-color: var(--blue);
     padding: 6px 18px;
