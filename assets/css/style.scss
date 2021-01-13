@@ -205,13 +205,13 @@ a.button {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 0;
+  gap: 12px 0;
   padding-top: 2rem;
 
   &__label {
     grid-column: 1;
-    padding-bottom: 6px;
     border-bottom: 2px var(--white) solid;
+    padding-bottom: 8px;
   }
   &__textfield {
     grid-column: 2;
@@ -219,18 +219,13 @@ a.button {
     min-width: 150px;
     text-align: left;
     background-color: transparent;
-    padding-top: 10px;
-    margin-bottom: 1rem;
     border-bottom: 2px var(--white) solid;
+    padding-bottom: 8px;
   }
   &__textfield--big {
     position: relative;
     height: 70px;
-    // border-bottom: none;
-  }
-  &__textfield:last-of-type {
-    position: relative;
-    // border-bottom: 2px var(--white) solid;
+
     &::before {
       content: "";
       width: 2px;
@@ -242,14 +237,12 @@ a.button {
     }
   }
   textarea {
-    border-bottom: 2px var(--blue) solid;
     appearance: none;
     border: none;
     resize: vertical;
     outline: none;
     overflow: auto;
     font-family: inherit;
-    font-size: 16px;
     line-height: 18px;
     color: inherit;
   }
