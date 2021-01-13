@@ -120,7 +120,7 @@ strong {
   color: var(--black);
 }
 a {
-  color: var(--blue);
+  color: var(--darker-blue);
   font-weight: bold;
 }
 h1, h2, h3 {
@@ -253,15 +253,17 @@ a.button {
 }
 
 .main__container h1, .main__container h2 {
-  position: relative;
-  padding: 1rem 0 2rem 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   font-size: 27px;
   font-weight: 800;
   line-height: 1.2;
 }
+.main__container h2 {
+  padding-left: 1rem;
+}
 .main__container h2:before {
-  content: url(../images/slash.svg);
-  position: absolute;
+  content: url(../images/slash--small.svg);
   left: -23px;
   top: -5px;
 }
