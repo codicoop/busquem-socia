@@ -238,7 +238,7 @@ a.button {
       bottom: -2px;
       right: -2px;
     }
-
+  }
   textarea {
     border-bottom: 2px var(--blue) solid;
     appearance: none;
@@ -384,13 +384,13 @@ li::before {
   .sidebar p {
     padding-bottom: 5px;
   }
-  .main__container h1 {
+  .section h1 {
     padding-top: 1rem;
     padding-bottom: 2rem;
     font-size: 2.8rem;
     text-indent: 37px;
   }
-  .main__container h1:before {
+  .section h1:before {
     padding-right: 0.3em;
     margin-left: -0.9em;
   }
