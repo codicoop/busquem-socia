@@ -543,6 +543,18 @@ li::before {
     margin-left: -0.9em;
   }
 
+  .section h2 {
+    font-size: 37px;
+  }
+  .section h2:before {
+    content: url(../images/slash.svg);
+    position: relative;
+  }
+
+  section + aside {
+    padding-top: 0;
+  }
+
   /* Llistats */
   ul {
     padding-left: 60px;

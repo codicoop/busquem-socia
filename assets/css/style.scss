@@ -517,7 +517,18 @@ li::before {
     padding-right: 0.3em;
     margin-left: -0.9em;
   }
-  
+
+  .section h2 {
+    font-size: 37px;
+
+    &:before {
+      content: url(../images/slash.svg);
+      position: relative;
+    }
+  }
+  section + aside {
+    padding-top: 0;
+  }
   /* Llistats */
   ul {
     padding-left: 60px;
