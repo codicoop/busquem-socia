@@ -144,6 +144,10 @@ h1, h2, h3 {
 .header__container {
   padding: 1.5rem;
 }
+.header__container a {
+  display: flex;
+  align-items: center;
+}
 
 header img {
   max-width: 90%;
@@ -335,13 +339,14 @@ ul {
 }
 
 li {
+  position: relative;
   padding-bottom: 1rem;
 }
 
 li::before {
   content: url(../images/arrow.svg);
   position: absolute;
-  left: 0px;
+  left: -19px;
   top: 2px;
 }
 
