@@ -133,7 +133,7 @@ h1, h2, h3 {
 /* Components */
 /* Buttons */
 .btn {
-  padding: 8px 8px 40px;
+  padding: 8px 0 8px 25px;
 
   // The colors of the buttons
   &.btn--blue {
@@ -159,8 +159,8 @@ h1, h2, h3 {
   &.btn--left {
     position: relative;
     padding-right: 60px;
-    align-self: flex-end;
-    left: 80px;
+    left: 14px;
+    
     &::before {
       position: absolute;
       width: 24.5px;
@@ -180,9 +180,9 @@ h1, h2, h3 {
     }
   }
   &.btn__arrow::after {
-    content: url('../images/icons/icon_arrow--right.svg');
+    content: url('../images/icon_arrow--right.svg');
     position: absolute;
-    top: 14px;
+    top: 9px;
     right: 30px;
   }
     //.btn--trapeze is a flex item (from a column)
@@ -361,14 +361,10 @@ a.button {
   }
   &__submit {
     grid-column: 2;
+    justify-self: end;
 
-    // background-color: var(--white);
-    // padding: 6px 18px;
-    // border-radius: 4px;
-    // justify-self: end;
-    // text-align: center;
-    // width: 100px;
-    // margin-bottom: 1rem;
+    margin-top: 20px;
+    margin-bottom: 5px;
     &:hover {
       background-color: var(--darker-blue);
     }
@@ -379,6 +375,9 @@ a.button {
     font-style: italic;
     margin-bottom: 0;
     padding-bottom: 0;
+    text-align: end;
+    justify-self: end;
+    max-width: 256px;
   }
 }
 
