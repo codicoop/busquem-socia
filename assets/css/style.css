@@ -131,7 +131,7 @@ h1, h2, h3 {
 /* Components */
 /* Buttons */
 .btn {
-  padding: 12.3px 0 12.3px var(--spacing-xxl-2);
+  padding: 8px 8px 40px;
 }
 .btn.btn--blue {
   background-color: var(--blue);
@@ -153,13 +153,13 @@ h1, h2, h3 {
 }
 .btn.btn--left {
   position: relative;
-  padding-right: var(--spacing-xxl-4);
+  padding-right: 60px;
   align-self: flex-end;
-  left: 32px;
+  left: 80px;
 }
 .btn.btn--left::before {
   position: absolute;
-  width: 29.5px;
+  width: 24.5px;
   left: -0.5px;
   top: -0.8px;
 }

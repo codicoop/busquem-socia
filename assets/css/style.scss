@@ -133,7 +133,7 @@ h1, h2, h3 {
 /* Components */
 /* Buttons */
 .btn {
-  padding: 12.3px 0 12.3px var(--spacing-xxl-2);
+  padding: 8px 8px 40px;
 
   // The colors of the buttons
   &.btn--blue {
@@ -158,12 +158,12 @@ h1, h2, h3 {
   //.btn--left is a flex item (from a column)
   &.btn--left {
     position: relative;
-    padding-right: var(--spacing-xxl-4);
+    padding-right: 60px;
     align-self: flex-end;
-    left: 32px;
+    left: 80px;
     &::before {
       position: absolute;
-      width: 29.5px;
+      width: 24.5px;
       left: -0.5px;
       top: -0.8px;
     }
@@ -361,7 +361,7 @@ a.button {
   }
   &__submit {
     grid-column: 2;
-    
+
     // background-color: var(--white);
     // padding: 6px 18px;
     // border-radius: 4px;
