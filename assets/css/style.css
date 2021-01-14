@@ -528,10 +528,12 @@ li::before {
     grid-row: 1;
     margin-top: 4rem;
     position: sticky;
-    top: 3rem;
+    top: 2rem;
     left: auto;
-    width: 90%;
+    width: 100%;
     border-radius: 3px;
+    font-size: 14px;
+    box-shadow: var(--top-layer);
   }
   .sidebar p {
     padding-bottom: 5px;
@@ -563,7 +565,7 @@ li::before {
     left: 35px;
   }
 
-  a.button {
+  .section4 a {
     display: none;
   }
 }
