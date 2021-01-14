@@ -278,10 +278,13 @@ a.button {
   position: relative;
   width: 116%;
   left: -24px;
-  padding: 1.5rem;
   font-size: 0.875rem;
   line-height: 1.3;
   background-color: var(--blue);
+  &__container {
+    padding: 1.5rem;
+    max-width: 500px;
+  }
   p {
     padding-bottom: 5px;
   }
@@ -299,6 +302,7 @@ a.button {
 /* Forms */
 .input {
   width: 100%;
+  max-width: ;
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 12px 0;

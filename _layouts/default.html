@@ -97,26 +97,28 @@
             <a href="#contacte" class="button">Contácta'ns</a>
           </section>
           <aside class="sidebar" id="contacte">
-            <h3>T'interessa?</h3>
-            <p>Contacta'ns a través d'aquest formulari i parlem-ne!</p>
-            <p> O si ho prefereixes, envia'ns un email directament a <a href="mailto:hola@codi.coop">hola@codi.coop</a>.</p>
-            <form id="form-contact" class="input" action="https://formcarry.com/s/Bk5HJXbdM" method="POST">
-              <label class="input__label" for="name">Nom</label>
-              <input type="text" name="name" class="input__textfield" required>
-              <label class="input__label" for="email">Email</label>
-              <input type="email" name="email" class="input__textfield" required>
-              <label class="input__label" for="_subject">Títol</label>
-              <input type="text" name="_subject" class="input__textfield" required>
-              <label class="input__label" for="message">Missatge</label>
-              <textarea name="message" class="input__textfield input__textfield--big" required></textarea>
-              <div id="form-submit" class="input__submit btn btn--white btn--left btn__arrow bg--blue">
-                <input class="text-menu" type="submit" value="Enviar">
-              </div>
-              <input type="text" name="_gotcha" style="display:none">
-              <input type="hidden" name="_next" value="/">
-              <div id="form-thankyou" style="display:none;">Moltes gràcies pel teu missatge!</div>
-              <p class="avis">*Si quan enviis el formulari et porta a la nostra web, és que s'ha enviat correctament.</p>
-            </form>
+            <div class="sidebar__container">
+              <h3>T'interessa?</h3>
+              <p>Contacta'ns a través d'aquest formulari i parlem-ne!</p>
+              <p> O si ho prefereixes, envia'ns un email directament a <a href="mailto:hola@codi.coop">hola@codi.coop</a>.</p>
+              <form id="form-contact" class="input" action="https://formcarry.com/s/Bk5HJXbdM" method="POST">
+                <label class="input__label" for="name">Nom</label>
+                <input type="text" name="name" class="input__textfield" required>
+                <label class="input__label" for="email">Email</label>
+                <input type="email" name="email" class="input__textfield" required>
+                <label class="input__label" for="_subject">Títol</label>
+                <input type="text" name="_subject" class="input__textfield" required>
+                <label class="input__label" for="message">Missatge</label>
+                <textarea name="message" class="input__textfield input__textfield--big" required></textarea>
+                <div id="form-submit" class="input__submit btn btn--white btn--left btn__arrow bg--blue">
+                  <input class="text-menu" type="submit" value="Enviar">
+                </div>
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_next" value="/">
+                <div id="form-thankyou" style="display:none;">Moltes gràcies pel teu missatge!</div>
+                <p class="avis">*Si quan enviis el formulari et porta a la nostra web, és que s'ha enviat correctament.</p>
+              </form>
+            </div>
           </aside>
           {{ content }}
         </div>
