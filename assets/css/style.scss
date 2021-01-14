@@ -214,7 +214,12 @@ h1, h2, h3 {
     }
   }
 }
-
+.text-menu {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
 .wrapper {
   display: grid;
   grid-template-columns: auto minmax(auto, 1366px) auto;
@@ -301,7 +306,24 @@ a.button {
 
   textarea {
     appearance: none;
-    border: none;
+    // border: none;
+    border-top-color: currentcolor;
+    border-top-style: none;
+    border-top-width: medium;
+    border-right-color: currentcolor;
+    border-right-style: none;
+    border-right-width: medium;
+    border-bottom-color: var(--white);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-left-color: currentcolor;
+    border-left-style: none;
+    border-left-width: medium;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
     resize: vertical;
     outline: none;
     overflow: auto;
