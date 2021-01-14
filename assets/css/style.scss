@@ -126,6 +126,9 @@ strong {
 a {
   color: var(--darker-blue);
   font-weight: bold;
+  &.btn {
+    color: var(--grey-text);
+  }
 }
 h1, h2, h3 {
   text-align: left;
@@ -189,7 +192,7 @@ h1, h2, h3 {
     //.btn--trapeze is a flex item (from a column)
   &.btn--trapeze {
     align-self: center;
-    padding-right: var(--spacing-xxl-2);
+    padding-right: 25px;
     position: relative;
     overflow: visible;
     &::before {
@@ -207,15 +210,15 @@ h1, h2, h3 {
     }
     &:not(.bg--grey)::before,
     &:not(.bg--grey)::after {
-      content: url('../assets/images/box_negative.svg');
+      content: url('../images/box_negative.svg');
     }
     &.bg--grey::before,
     &.bg--grey::after {
-      content: url('../assets/images/box_negative--grey.svg');
+      content: url('../images/box_negative--grey.svg');
     }
     &.bg--blue::before,
     &.bg--blue::after {
-      content: url('../assets/images/box_negative--blue.svg');
+      content: url('../images/box_negative--blue.svg');
     }
   }
 }
@@ -393,7 +396,7 @@ a.button {
   padding-bottom: 2rem;
   font-size: 27px;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 .section h2:before {
   content: url(../images/slash--small.svg);
@@ -462,6 +465,9 @@ li::before {
   ul {
     padding-left: 40px;
   }
+  .section4 a {
+    margin-top: 44px;
+  }
 }
 
 @media (min-width: 1050px) {
@@ -501,9 +507,16 @@ li::before {
     margin-top: 4rem;
     position: sticky;
     top: 3rem;
-  }
-  .sidebar p {
+    left: auto;
+    width: 90%;
+    border-radius: 3px;
+    p {
     padding-bottom: 5px;
+    }
+    &__container {
+      padding-left: 2rem;
+      max-width: none;
+    }
   }
   .section h1 {
     padding-top: 1rem;

@@ -123,6 +123,9 @@ a {
   color: var(--darker-blue);
   font-weight: bold;
 }
+a.btn {
+  color: var(--grey-text);
+}
 
 h1, h2, h3 {
   text-align: left;
@@ -167,7 +170,7 @@ h1, h2, h3 {
 }
 .btn.btn--trapeze {
   align-self: center;
-  padding-right: var(--spacing-xxl-2);
+  padding-right: 25px;
   position: relative;
   overflow: visible;
 }
@@ -185,13 +188,13 @@ h1, h2, h3 {
   top: -0.8px;
 }
 .btn.btn--trapeze:not(.bg--grey)::before, .btn.btn--trapeze:not(.bg--grey)::after {
-  content: url("../assets/images/box_negative.svg");
+  content: url("../images/box_negative.svg");
 }
 .btn.btn--trapeze.bg--grey::before, .btn.btn--trapeze.bg--grey::after {
-  content: url("../assets/images/box_negative--grey.svg");
+  content: url("../images/box_negative--grey.svg");
 }
 .btn.btn--trapeze.bg--blue::before, .btn.btn--trapeze.bg--blue::after {
-  content: url("../assets/images/box_negative--blue.svg");
+  content: url("../images/box_negative--blue.svg");
 }
 
 .text-menu {
@@ -387,7 +390,7 @@ a.button :hover {
   padding-bottom: 2rem;
   font-size: 27px;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .section h2:before {
@@ -465,6 +468,10 @@ li::before {
   ul {
     padding-left: 40px;
   }
+
+  .section4 a {
+    margin-top: 44px;
+  }
 }
 @media (min-width: 1050px) {
   .header__container, .main__container {
@@ -522,10 +529,16 @@ li::before {
     margin-top: 4rem;
     position: sticky;
     top: 3rem;
+    left: auto;
+    width: 90%;
+    border-radius: 3px;
   }
-
   .sidebar p {
     padding-bottom: 5px;
+  }
+  .sidebar__container {
+    padding-left: 2rem;
+    max-width: none;
   }
 
   .section h1 {
