@@ -276,7 +276,7 @@ a.button {
 /* Formulari */
 .sidebar {
   position: relative;
-  width: 115%;
+  width: 116%;
   left: -24px;
   padding: 1.5rem;
   font-size: 0.875rem;
@@ -306,7 +306,7 @@ a.button {
 
   textarea {
     appearance: none;
-    // border: none;
+    margin: 0;
     border-top-color: currentcolor;
     border-top-style: none;
     border-top-width: medium;
@@ -359,16 +359,20 @@ a.button {
       right: -2px;
     }
   }
-  &__submit {
-    grid-column: 2;
+  &__box {
+    grid-column: 1 / -1;
 
-    background-color: var(--white);
-    padding: 6px 18px;
-    border-radius: 4px;
-    justify-self: end;
-    text-align: center;
-    width: 100px;
-    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &__submit {
+    // background-color: var(--white);
+    // padding: 6px 18px;
+    // border-radius: 4px;
+    // justify-self: end;
+    // text-align: center;
+    // width: 100px;
+    // margin-bottom: 1rem;
     &:hover {
       background-color: var(--darker-blue);
     }
