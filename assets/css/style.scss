@@ -13,12 +13,12 @@
 // 3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
 // *Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+/* CSS Reset */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
   v2.0 | 20110126
   License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -97,6 +97,7 @@ a {
 	color: inherit;
 }
 
+/* Variables and general styles */
 :root {
   --blue: #66cccc;
   --darker-blue: #339999;
@@ -129,6 +130,91 @@ a {
 h1, h2, h3 {
   text-align: left;
 }
+/* Components */
+/* Buttons */
+.btn {
+  padding: 12.3px 0 12.3px var(--spacing-xxl-2);
+
+  // The colors of the buttons
+  &.btn--blue {
+    background-color: var(--blue);
+  }
+  &.btn--lilac {
+    background-color: var(--lilac);
+  }
+  &.btn--red {
+    background-color: var(--red);
+  }
+  &.btn--white {
+    background-color: var(--white);
+  }
+  &.btn--black {
+    background-color: var(--black);
+  }
+  &.btn--orange {
+    background-color: var(--orange);
+  }
+  
+  //.btn--left is a flex item (from a column)
+  &.btn--left {
+    position: relative;
+    padding-right: var(--spacing-xxl-4);
+    align-self: flex-end;
+    left: 32px;
+    &::before {
+      position: absolute;
+      width: 29.5px;
+      left: -0.5px;
+      top: -0.8px;
+    }
+
+    // The colors of the backgrounds behind the buttons
+    &:not(.bg--grey)::before {
+      content: url('../images/box_negative.svg');
+    }
+    &.bg--grey::before {
+      content: url('../images/box_negative--grey.svg');
+    }
+    &.bg--blue::before {
+      content: url('../images/box_negative--blue.svg');
+    }
+  }
+  &.btn__arrow::after {
+    content: url('../images/icons/icon_arrow--right.svg');
+    position: absolute;
+    top: 14px;
+    right: 30px;
+  }
+    //.btn--trapeze is a flex item (from a column)
+  &.btn--trapeze {
+    align-self: center;
+    padding-right: var(--spacing-xxl-2);
+    position: relative;
+    overflow: visible;
+    &::before {
+      position: absolute;
+      width: 29.5px;
+      left: -0.5px;
+      top: -0.8px;
+    }
+    &::after {
+      position: absolute;
+      width: 29.5px;
+      transform: scaleX(-1);
+      right: -0.9px;
+      top: -0.8px;
+    }
+    &:not(.bg--grey)::before,
+    &:not(.bg--grey)::after {
+      content: url('../assets/images/box_negative.svg');
+    }
+    &.bg--grey::before,
+    &.bg--grey::after {
+      content: url('../assets/images/box_negative--grey.svg');
+    }
+  }
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: auto minmax(auto, 1366px) auto;
@@ -205,7 +291,7 @@ a.button {
   letter-spacing: 1.2;
   padding-bottom: 10px;
 }
-
+/* Forms */
 .input {
   width: 100%;
   display: grid;
@@ -213,6 +299,16 @@ a.button {
   gap: 12px 0;
   padding-top: 2rem;
 
+  textarea {
+    appearance: none;
+    border: none;
+    resize: vertical;
+    outline: none;
+    overflow: auto;
+    font-family: inherit;
+    line-height: 18px;
+    color: inherit;
+  }
   &__label {
     grid-column: 1;
     border-bottom: 2px var(--white) solid;
@@ -241,19 +337,10 @@ a.button {
       right: -2px;
     }
   }
-  textarea {
-    appearance: none;
-    border: none;
-    resize: vertical;
-    outline: none;
-    overflow: auto;
-    font-family: inherit;
-    line-height: 18px;
-    color: inherit;
-  }
   &__submit {
     grid-column: 2;
-    background-color: var(--blue);
+
+    background-color: var(--white);
     padding: 6px 18px;
     border-radius: 4px;
     justify-self: end;

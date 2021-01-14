@@ -1,3 +1,4 @@
+/* CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
   v2.0 | 20110126
   License: none (public domain)
@@ -89,6 +90,7 @@ a {
   color: inherit;
 }
 
+/* Variables and general styles */
 :root {
   --blue: #66cccc;
   --darker-blue: #339999;
@@ -124,6 +126,82 @@ a {
 
 h1, h2, h3 {
   text-align: left;
+}
+
+/* Components */
+/* Buttons */
+.btn {
+  padding: 12.3px 0 12.3px var(--spacing-xxl-2);
+}
+.btn.btn--blue {
+  background-color: var(--blue);
+}
+.btn.btn--lilac {
+  background-color: var(--lilac);
+}
+.btn.btn--red {
+  background-color: var(--red);
+}
+.btn.btn--white {
+  background-color: var(--white);
+}
+.btn.btn--black {
+  background-color: var(--black);
+}
+.btn.btn--orange {
+  background-color: var(--orange);
+}
+.btn.btn--left {
+  position: relative;
+  padding-right: var(--spacing-xxl-4);
+  align-self: flex-end;
+  left: 32px;
+}
+.btn.btn--left::before {
+  position: absolute;
+  width: 29.5px;
+  left: -0.5px;
+  top: -0.8px;
+}
+.btn.btn--left:not(.bg--grey)::before {
+  content: url("../images/box_negative.svg");
+}
+.btn.btn--left.bg--grey::before {
+  content: url("../images/box_negative--grey.svg");
+}
+.btn.btn--left.bg--blue::before {
+  content: url("../images/box_negative--blue.svg");
+}
+.btn.btn__arrow::after {
+  content: url("../images/icons/icon_arrow--right.svg");
+  position: absolute;
+  top: 14px;
+  right: 30px;
+}
+.btn.btn--trapeze {
+  align-self: center;
+  padding-right: var(--spacing-xxl-2);
+  position: relative;
+  overflow: visible;
+}
+.btn.btn--trapeze::before {
+  position: absolute;
+  width: 29.5px;
+  left: -0.5px;
+  top: -0.8px;
+}
+.btn.btn--trapeze::after {
+  position: absolute;
+  width: 29.5px;
+  transform: scaleX(-1);
+  right: -0.9px;
+  top: -0.8px;
+}
+.btn.btn--trapeze:not(.bg--grey)::before, .btn.btn--trapeze:not(.bg--grey)::after {
+  content: url("../assets/images/box_negative.svg");
+}
+.btn.btn--trapeze.bg--grey::before, .btn.btn--trapeze.bg--grey::after {
+  content: url("../assets/images/box_negative--grey.svg");
 }
 
 .wrapper {
@@ -223,12 +301,23 @@ a.button :hover {
   padding-bottom: 10px;
 }
 
+/* Forms */
 .input {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 12px 0;
   padding-top: 2rem;
+}
+.input textarea {
+  appearance: none;
+  border: none;
+  resize: vertical;
+  outline: none;
+  overflow: auto;
+  font-family: inherit;
+  line-height: 18px;
+  color: inherit;
 }
 .input__label {
   grid-column: 1;
@@ -257,19 +346,9 @@ a.button :hover {
   bottom: -2px;
   right: -2px;
 }
-.input textarea {
-  appearance: none;
-  border: none;
-  resize: vertical;
-  outline: none;
-  overflow: auto;
-  font-family: inherit;
-  line-height: 18px;
-  color: inherit;
-}
 .input__submit {
   grid-column: 2;
-  background-color: var(--blue);
+  background-color: var(--white);
   padding: 6px 18px;
   border-radius: 4px;
   justify-self: end;
