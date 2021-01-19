@@ -449,7 +449,7 @@ li::before {
   .main__container {
     padding: 2rem 0 2rem 0;
   }
-  .section {
+  .section, .sidebar {
     padding: 0 2rem 0 4rem;
   }
   .main__container {
@@ -471,6 +471,12 @@ li::before {
   .section4 a {
     margin-top: 44px;
   }
+  .nosaltres {
+    img {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
 }
 
 @media (min-width: 1050px) {
@@ -480,7 +486,7 @@ li::before {
   .main__container {
     padding: 3rem 0 3rem 0;
   }
-  .section {
+  .section, .sidebar {
     padding: 0 3rem 0 120px;
   }
   header h2 {
