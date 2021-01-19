@@ -136,21 +136,14 @@ h1, h2, h3 {
   padding: 8px 0 8px 25px;
   border-radius: 3px;
 }
+.btn:hover {
+  filter: opacity(75%);
+}
 .btn.btn--white {
   background-color: var(--white);
 }
-.btn.btn--white:hover {
-  background-color: transparent;
-  color: var(--white);
-  border: 3px solid var(--white);
-}
 .btn.btn--blue {
   background-color: var(--blue);
-}
-.btn.btn--blue:hover {
-  background-color: transparent;
-  color: var(--blue);
-  border: 3px solid var(--blue);
 }
 .btn.btn--left {
   position: relative;

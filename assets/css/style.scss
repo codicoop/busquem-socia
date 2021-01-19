@@ -138,23 +138,15 @@ h1, h2, h3 {
 .btn {
   padding: 8px 0 8px 25px;
   border-radius: 3px;
-
+  &:hover {
+    filter: opacity(75%);
+  }
   // The colors of the buttons
   &.btn--white {
     background-color: var(--white);
-    &:hover {
-      background-color: transparent;
-      color: var(--white);
-      border: 3px solid var(--white);
-    }
   }
   &.btn--blue {
     background-color: var(--blue);
-    &:hover {
-      background-color: transparent;
-      color: var(--blue);
-      border: 3px solid var(--blue);
-    }
   }
   // &.btn--lilac {
   //   background-color: var(--lilac);
