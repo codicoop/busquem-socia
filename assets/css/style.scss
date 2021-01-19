@@ -257,9 +257,10 @@ header img {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  img {
-    max-width: 100%;
-  }
+  
+  // img {
+  //   max-width: 100%;
+  // }
 }
 .main__container .section1 { order: 1; }
 .main__container .section2 { order: 3; }
