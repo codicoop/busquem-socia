@@ -100,7 +100,7 @@ a {
 /* Variables and general styles */
 :root {
   --blue: #66cccc;
-  --darker-blue: #339999;
+  --darker-blue: #55adad;
   --black: #272525;
   --grey-text: #333333;
   --grey-footer: #555555;
@@ -142,9 +142,19 @@ h1, h2, h3 {
   // The colors of the buttons
   &.btn--white {
     background-color: var(--white);
+    &:hover {
+      background-color: transparent;
+      color: var(--white);
+      border: 3px solid var(--white);
+    }
   }
   &.btn--blue {
     background-color: var(--blue);
+    &:hover {
+      background-color: transparent;
+      color: var(--blue);
+      border: 3px solid var(--blue);
+    }
   }
   // &.btn--lilac {
   //   background-color: var(--lilac);
@@ -319,7 +329,6 @@ header img {
   }
   &__label {
     grid-column: 1;
-    border-bottom: 2px var(--white) solid;
     padding-bottom: 8px;
   }
   &__textfield {
@@ -354,9 +363,6 @@ header img {
 
     margin-top: 20px;
     margin-bottom: 5px;
-    &:hover {
-      background-color: var(--darker-blue);
-    }
   }
   .avis {
     grid-column: 2;
@@ -466,7 +472,7 @@ li::before {
     letter-spacing: 0;
   }
   header img {
-    width: 500px;
+    width: 400px;
   }
   .main__container {
     display: grid;
@@ -499,7 +505,7 @@ li::before {
     width: 100%;
     border-radius: 3px;
     font-size: 14px;
-    box-shadow: var(--top-layer);
+    box-shadow: -4px 3px 3px -1px rgba(0, 0, 0, 0.5));
     p {
     padding-bottom: 5px;
     }
