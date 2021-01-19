@@ -220,6 +220,7 @@ h1, h2, h3 {
 
 .main__wrapper {
   grid-column: 2;
+  overflow: hidden;
 }
 
 .header__container {
@@ -282,6 +283,7 @@ header img {
   width: calc(100% + 48px);
   line-height: 1.3;
   background-color: var(--blue);
+  padding: 0 1.5rem;
 }
 .sidebar__container {
   padding: 1.5rem;
@@ -422,6 +424,13 @@ p {
 
 .nosaltres {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+}
+.nosaltres img {
+  max-width: 500px;
 }
 
 /* Llistats */
@@ -478,11 +487,6 @@ li::before {
   .section4 a {
     margin-top: 44px;
   }
-
-  .nosaltres img {
-    max-width: 500px;
-    margin: 0 auto;
-  }
 }
 @media (min-width: 1050px) {
   .header__container {
@@ -493,7 +497,7 @@ li::before {
     padding: 3rem 0 3rem 0;
   }
 
-  .section, .sidebar {
+  .section {
     padding: 0 3rem 0 120px;
   }
 
@@ -553,6 +557,10 @@ li::before {
   .sidebar__container {
     padding-left: 2rem;
     max-width: none;
+  }
+
+  .nosaltres {
+    grid-column: 1;
   }
 
   .section h1 {
