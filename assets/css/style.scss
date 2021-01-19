@@ -553,7 +553,7 @@ li::before {
   }
   .main__container .nosaltres {
     grid-column: 1;
-    background-color: none;
+    background-color: transparent;
     img {
       border-radius: 5px;
       max-width: 60%;

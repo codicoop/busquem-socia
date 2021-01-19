@@ -567,7 +567,7 @@ li::before {
 
   .main__container .nosaltres {
     grid-column: 1;
-    background-color: none;
+    background-color: transparent;
   }
   .main__container .nosaltres img {
     border-radius: 5px;
