@@ -263,8 +263,15 @@ header img {
   // }
 }
 .main__container .section1 { order: 1; }
-.main__container .section2 { order: 3; }
-.main__container .nosaltres { order: 4; }
+.main__container .section2 { order: 4; }
+.main__container .nosaltres { 
+  order: 3; 
+  padding-top: 1rem;
+  background-color: var(--black);
+  img {
+    width: 100%;
+  }
+}
 .main__container .section3 { order: 5; }
 .main__container .section4 { order: 6; }
 .main__container .sidebar { order: 2; }
@@ -436,8 +443,14 @@ li::before {
 }
 
 @media(min-width: 768px) {
-  .header__container, .main__container {
+  .header__container {
     padding: 2rem 2rem 2rem 4rem;
+  }
+  .main__container {
+    padding: 2rem 0 2rem 0;
+  }
+  .section {
+    padding: 0 2rem 0 4rem;
   }
   .main__container {
     margin-bottom: 2rem;
@@ -461,8 +474,14 @@ li::before {
 }
 
 @media (min-width: 1050px) {
-  .header__container, .main__container {
+  .header__container {
     padding: 3rem 3rem 3rem 120px;
+  }
+  .main__container {
+    padding: 3rem 0 3rem 0;
+  }
+  .section {
+    padding: 0 3rem 0 120px;
   }
   header h2 {
     max-width: 60%;
