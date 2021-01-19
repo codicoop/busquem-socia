@@ -565,11 +565,11 @@ li::before {
     max-width: none;
   }
 
-  .nosaltres {
+  .main__container .nosaltres {
     grid-column: 1;
     background-color: none;
   }
-  .nosaltres img {
+  .main__container .nosaltres img {
     border-radius: 5px;
     max-width: 60%;
   }
