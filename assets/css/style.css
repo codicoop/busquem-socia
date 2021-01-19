@@ -93,7 +93,7 @@ a {
 /* Variables and general styles */
 :root {
   --blue: #66cccc;
-  --darker-blue: #339999;
+  --darker-blue: #55adad;
   --black: #272525;
   --grey-text: #333333;
   --grey-footer: #555555;
@@ -139,8 +139,18 @@ h1, h2, h3 {
 .btn.btn--white {
   background-color: var(--white);
 }
+.btn.btn--white:hover {
+  background-color: transparent;
+  color: var(--white);
+  border: 3px solid var(--white);
+}
 .btn.btn--blue {
   background-color: var(--blue);
+}
+.btn.btn--blue:hover {
+  background-color: transparent;
+  color: var(--blue);
+  border: 3px solid var(--blue);
 }
 .btn.btn--left {
   position: relative;
@@ -316,7 +326,6 @@ header img {
 }
 .input__label {
   grid-column: 1;
-  border-bottom: 2px var(--white) solid;
   padding-bottom: 8px;
 }
 .input__textfield {
@@ -350,9 +359,6 @@ header img {
   justify-self: end;
   margin-top: 20px;
   margin-bottom: 5px;
-}
-.input__submit:hover {
-  background-color: var(--darker-blue);
 }
 .input .avis {
   grid-column: 2;
@@ -474,7 +480,7 @@ li::before {
   }
 
   header img {
-    width: 500px;
+    width: 400px;
   }
 
   .main__container {
@@ -522,7 +528,7 @@ li::before {
     width: 100%;
     border-radius: 3px;
     font-size: 14px;
-    box-shadow: var(--top-layer);
+    box-shadow: -4px 3px 3px -1px rgba(0, 0, 0, 0.5);
   }
   .sidebar p {
     padding-bottom: 5px;
